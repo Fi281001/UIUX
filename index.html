@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons (optional) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .noto-bold {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 700 !important;
+        letter-spacing: 0.03em;
+      }
+      .noto-bold2 {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 600 !important;
+      }
+      .noto-bold3 {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400 !important;
+        font-size:13px;
+        line-height:16px;
+        color:#7E7E7E;
+        width:527px;
+      }
+      .underline-custom {
+        position: relative;
+        padding-bottom: 16px;
+      }
+      .underline-custom::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        width: 100%;
+        height: 4px;
+        background-color: #3DCC85 
+      }
+      .custom-p {
+        font-size: 14px;
+      }
+      .price-section {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.5rem;
+      }
+      .tax-text {
+        font-size: 0.875rem; /* Nhỏ hơn chút */
+      }
+      .text-custom-gray {
+        color: #A0A0A0 !important;
+        margin-bottom: -10px;
+      }
+      .button-Orange {
+        background: #f39800;
+        color: white;
+        border-radius: 4px;
+        border:none
+      }
+    </style>
+  </head>
+  <body class="">
+    <div
+      class="d-flex w-100 justify-content-center align-items-center  gap-5 mt-2 noto-bold  lh-1"
+    >
+        <span class="fs-6 underline-custom text-body-secondary mt-3">フェイスをつくる</span>
+        <span class="fs-6 text-body-secondary">フェイスセットを注文</span> 
+    </div>
+       <!--/* <div class="w-100 h-100 mt-3 d-flex justify-content-center"  style="gap: 70px; margin-left: 2px;">
+        <div style="width: 593px; height: 440px;">
+            <img src="src/image/item.png" style="width: 100%; height: 100%; object-fit: cover;" />
+        </div>
+        <div class="" style="width: 572px;margin-left: 24px;">
+            <div>
+                <span class="noto-bold fs-4 text-body-secondary">フェイスをつくる</span>
+                <br>
+                <span class="noto-bold fs-2 text-body-secondary">ねんどろいどフェイスメーカー</span>
+                <p class="text-body-secondary custom-p">商品コード： 0101    </p>
+                <div class="text-body-secondary d-flex align-items-center gap-4">
+                    <div class="price-section">
+                    <span class="fs-2 fw-bold noto-bold">¥ 1,400</span>
+                    <p class="tax-text mb-0 custom-p noto-bold">税込</p>
+                    </div>
+                    <p class="custom-p text-custom-gray">＋送料：440円</p>
+                </div>
+            </div>
+            <hr style="width:527px"/>
+            <div>
+                <div>
+                    <div style="width: 193px; height: 30px;">
+                    <button class="button-Orange" style="width: 71px;">STEP 1</button>
+                    <span class="text-body-secondary fs-6 noto-bold2">注文形式を選ぶ</span>
+                    </div>
+                    <div class="rounded-1 d-flex align-items-center justify-content-center mt-2" style="width: 310px; height: 48px; border:3px solid #3DCC85;">
+                        <span class="fs-6 noto-bold text-body-secondary">オリジナルフェイス×2</span>
+                    </div>
+                    <div class="rounded-1 d-flex align-items-center justify-content-center mt-2" style="width: 355px; height: 48px; border:3px solid #E9E9E9;">
+                        <span class="fs-6 noto-bold" style="color:#A0A0A0">オリジナルフェイス+のっぺらフェイス</span>
+                    </div>
+                </div>
+                <div style="margin-top:20px; width:348px">
+                    <button  class="button-Orange" style="width: 71px;">STEP 2</button>
+                    <span class="text-body-secondary fs-6 noto-bold2">みんなのフェイス掲載可否を選ぶ</span>
+                    <div class="mt-3 d-flex gap-3">
+                        <div class="rounded-1 d-flex align-items-center justify-content-center" style="width:170px; height:48px;border:3px solid #3DCC85;"> 
+                        <span class="fs-6 noto-bold text-body-secondary">掲載可</span>
+                        </div>
+                        <div class="rounded-1 d-flex align-items-center justify-content-center" style="width:170px; height:48px;border:3px solid #E9E9E9;">
+                        <span class="fs-6 noto-bold" style="color:#A0A0A0">掲載不可</span>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top:20px;">
+                    <button class="button-Orange" style="width: 71px;">STEP 3</button>
+                    <span class="text-body-secondary fs-6 noto-bold2">STEP1・2を選んでフェイスをつくる</span>
+                    <div class="mt-3 rounded-1  justify-content-center" 
+                    >
+                        <button style="width:527px; height:56px; background:#3DCC85;border:none" class="fs-5 noto-bold2 text-white rounded-pill">フェイスをつくる</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="mt-5">
+                    <p class="noto-bold" style="color:#7E7E7E;font-size: 13px; line-height: 20px;">注文形式</p>
+                    <p class="noto-bold3">１回の注文で、２つのフェイスを作成することができます。以下の注文形式からお選びください。</p>
+                    <p class="noto-bold3">・オリジナルフェイス×2<br>オリジナルのフェイスを２つ作成できます。</p>
+                    <p class="noto-bold3">・オリジナルフェイス＋のっぺらフェイス<br>
+                    オリジナルのフェイスを１つ作成し、加工のない「のっぺらフェイス」を１つお届けします。
+                    </p>
+                    <p class="noto-bold3">※2025年1月23日より「鼻なしフェイス」の販売を終了し、「鼻ありフェイス」の販売を開始しました。</p>
+                </div>
+                <div>
+                    <p class="noto-bold" style="color:#7E7E7E;font-size: 13px; line-height: 20px;">みんなのフェイス掲載</p>
+                    <p class="noto-bold3">選択項目で【掲載可】を選択された場合、お客様が作成したフェイスデザインは、本サービスの運営規定に基づき「みんなのフェイス」に掲載されます。</p>
+                    <p class="noto-bold3">※「みんなのフェイス」に掲載されたデザインは、他のお客様がフェイス作成画面から読み込み・編集することができます</p>
+                </div>
+                <div>
+                    <p class="noto-bold" style="color:#7E7E7E;font-size: 13px; line-height: 20px;">コラボフェイス注意事項</p>
+                    <p class="noto-bold3">・ねんどろいど本体は『ねんどろいどフェイスメーカー』では販売してお<br>りません。</p>
+                    <p class="noto-bold3">・コラボフェイスは『ねんどろいどフェイスメーカー』限定販売です。コラボ終了後は購<br>入できませんので、あらかじめご了承ください。</p>
+                    <p class="noto-bold3">・コラボフェイスの肌色は「初音ミク用カラー」が使用されます。</p>
+                    <p class="noto-bold3">・コラボフェイスの「口」は凹凸がなく平面的に印刷されている等、ねんどろいど付属の<br>表情パーツとは仕様が異なる部分があります。</p>
+                </div>
+            </div>
+        </div>
+    </div>  */-->
+  <div>
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
