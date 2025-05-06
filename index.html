@@ -23,12 +23,12 @@
         font-family: "Sofia Pro Soft";
         src: url("fonts/SofiaProSoft-Regular.woff2") format("woff2"),
           url("fonts/SofiaProSoft-Regular.woff") format("woff");
-        font-weight: 400 !important;
+        font-weight: 400;
         font-style: normal;
       }
       .custom-font {
         font-family: "Chau Philomene One", sans-serif;
-        font-weight: 400 !important;
+        font-weight: 400;
         line-height: 100%;
         letter-spacing: 0%;
       }
@@ -45,16 +45,16 @@
       }
       .noto-bold {
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 700 !important;
+        font-weight: 700;
         letter-spacing: 0.03em;
       }
       .noto-bold2 {
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 600 !important;
+        font-weight: 600;
       }
       .noto-bold3 {
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 400 !important;
+        font-weight: 400;
         font-size: 13px;
         line-height: 16px;
         color: #7e7e7e;
@@ -84,7 +84,7 @@
         font-size: 0.875rem;
       }
       .text-custom-gray {
-        color: #a0a0a0 !important;
+        color: #a0a0a0;
         margin-bottom: -10px;
       }
       .button-Orange {
@@ -121,6 +121,10 @@
         height: 48px;
         border: 3px solid #e9e9e9;
       }
+      .customDiv {
+        width: 593px;
+        height: 440px;
+      }
       .flex_item > div:first-child > img {
         margin-left: -30px;
       }
@@ -132,13 +136,13 @@
       @media (max-width: 1200px) {
         .flex_item {
           gap: 50px;
-          flex-direction: column !important;
-          align-items: center !important;
+          flex-direction: column;
+          align-items: center;
         }
 
         .flex_item > div:first-child {
-          width: 80% !important;
-          height: 440px !important;
+          width: 80%;
+          height: 440px;
         }
         .flex_item > div:first-child > img {
           border-radius: 16px;
@@ -165,13 +169,13 @@
       @media (max-width: 1110px) {
         .flex_item {
           gap: 50px;
-          flex-direction: column !important;
-          align-items: center !important;
+          flex-direction: column;
+          align-items: center;
         }
 
         .flex_item > div:first-child {
-          width: 80% !important;
-          height: 440px !important;
+          width: 80%;
+          height: 440px;
         }
         .flex_item > div:first-child > img {
           border-radius: 16px;
@@ -194,13 +198,13 @@
       @media (max-width: 900px) {
         .flex_item {
           gap: 30px;
-          flex-direction: column !important;
-          align-items: center !important;
+          flex-direction: column;
+          align-items: center;
         }
 
         .flex_item > div:first-child {
-          width: 68% !important;
-          height: 196px !important;
+          width: 68%;
+          height: 196px;
         }
         .flex_item > div:first-child > img {
           border-radius: 16px;
@@ -223,13 +227,13 @@
       @media (max-width: 400px) {
         .flex_item {
           gap: 15px;
-          flex-direction: column !important;
-          align-items: center !important;
+          flex-direction: column;
+          align-items: center;
         }
 
         .flex_item > div:first-child {
-          width: 69% !important;
-          height: 196px !important;
+          width: 68%;
+          height: 196px;
         }
         .flex_item > div:first-child > img {
           border-radius: 16px;
@@ -267,7 +271,7 @@
       class="flex_item w-100 h-100 mt-3 d-flex justify-content-center"
       style=""
     >
-      <div style="width: 593px; height: 440px">
+      <div class="customDiv">
         <img
           src="src/image/item.png"
           style="width: 100%; height: 100%; object-fit: cover"
